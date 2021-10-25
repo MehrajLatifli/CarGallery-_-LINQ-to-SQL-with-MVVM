@@ -1,0 +1,13 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:sys="clr-namespace:System;assembly=mscorlib">
+    
+    <SolidColorBrush x:Key="TextForeGroundColor" Color="Red"></SolidColorBrush>
+    <SolidColorBrush x:Key="TextBorderColor" Color="Red"></SolidColorBrush>
+    <sys:Double x:Key="TextFontSize" >55</sys:Double>
+
+
+    <Style x:Key="ArialBold">
+        <Setter Property="TextElement.FontFamily" Value="/Fonts/#Arial Bold"></Setter>
+        <Setter Property="TextElement.FontWeight" Value="Bold"></Setter>
+    </Style>
+</ResourceDictionary>

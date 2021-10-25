@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="CarGallery" Class="CarGalleryDataClassesDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=DESKTOP-H3L9NOH;Initial Catalog=CarGallery;User ID=sa;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False" SettingsObjectName="CarGallery.Properties.Settings" SettingsPropertyName="CarGalleryConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Admins" Member="Admins">
+    <Type Name="Admin">
+      <Column Name="IdAdmins" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="[Name of Admins]" Member="Name_of_Admins" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="[Passwords of Admins]" Member="Passwords_of_Admins" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Association Name="Admin_Car" Member="Cars" ThisKey="IdAdmins" OtherKey="AdminsId" Type="Car" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CarBodyStyles" Member="CarBodyStyles">
+    <Type Name="CarBodyStyle">
+      <Column Name="IdCarBodyStyles" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="[Name of Car Body Styles]" Member="Name_of_Car_Body_Styles" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Association Name="CarBodyStyle_Car" Member="Cars" ThisKey="IdCarBodyStyles" OtherKey="CarBodyStylesId" Type="Car" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CarBrandsandModels" Member="CarBrandsandModels">
+    <Type Name="CarBrandsandModel">
+      <Column Name="IdCarBrandsandModels" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="[BrandsandModels of car]" Member="BrandsandModels_of_car" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="[Images of car]" Member="Images_of_car" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Association Name="CarBrandsandModel_Car" Member="Cars" ThisKey="IdCarBrandsandModels" OtherKey="CarBrandsandModelsId" Type="Car" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CarColors" Member="CarColors">
+    <Type Name="CarColor">
+      <Column Name="IdCarColors" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="[Name of Car Color]" Member="Name_of_Car_Color" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Association Name="CarColor_Car" Member="Cars" ThisKey="IdCarColors" OtherKey="CarColorsId" Type="Car" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CarEnginePowers" Member="CarEnginePowers">
+    <Type Name="CarEnginePower">
+      <Column Name="IdCarEnginePowers" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="[Number of Car Engine Powers]" Member="Number_of_Car_Engine_Powers" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Association Name="CarEnginePower_Car" Member="Cars" ThisKey="IdCarEnginePowers" OtherKey="CarEnginePowersId" Type="Car" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CarEngines" Member="CarEngines">
+    <Type Name="CarEngine">
+      <Column Name="IdCarEngines" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="[Number of Car Engine]" Member="Number_of_Car_Engine" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Association Name="CarEngine_Car" Member="Cars" ThisKey="IdCarEngines" OtherKey="CarEnginesId" Type="Car" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CarFueltypes" Member="CarFueltypes">
+    <Type Name="CarFueltype">
+      <Column Name="IdCarFueltypes" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="[Name of Car Fueltypes]" Member="Name_of_Car_Fueltypes" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Association Name="CarFueltype_Car" Member="Cars" ThisKey="IdCarFueltypes" OtherKey="CarFueltypesId" Type="Car" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CarGearboxes" Member="CarGearboxes">
+    <Type Name="CarGearbox">
+      <Column Name="IdCarGearboxes" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="[Name of Car Gearboxes]" Member="Name_of_Car_Gearboxes" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Association Name="CarGearbox_Car" Member="Cars" ThisKey="IdCarGearboxes" OtherKey="CarGearboxesId" Type="Car" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CarKilometres" Member="CarKilometres">
+    <Type Name="CarKilometre">
+      <Column Name="IdCarKilometres" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="[Number of Car Kilometres]" Member="Number_of_Car_Kilometres" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Association Name="CarKilometre_Car" Member="Cars" ThisKey="IdCarKilometres" OtherKey="CarKilometresId" Type="Car" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CarPrices" Member="CarPrices">
+    <Type Name="CarPrice">
+      <Column Name="IdCarPrices" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="[Number of Car Prices]" Member="Number_of_Car_Prices" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Association Name="CarPrice_Car" Member="Cars" ThisKey="IdCarPrices" OtherKey="CarPricesId" Type="Car" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CarQuantities" Member="CarQuantities">
+    <Type Name="CarQuantity">
+      <Column Name="IdCarQuantities" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="[Quantity of Car]" Member="Quantity_of_Car" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="CarQuantity_Car" Member="Cars" ThisKey="IdCarQuantities" OtherKey="CarQuantitiesId" Type="Car" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Cars" Member="Cars">
+    <Type Name="Car">
+      <Column Name="IdCars" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CarBrandsandModelsId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ManufactureYearsId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CarBodyStylesId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CarColorsId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CarEnginesId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CarEnginePowersId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CarFueltypesId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CarKilometresId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CarGearboxesId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CarTransmissionsId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NewCarsId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CarPricesId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CarQuantitiesId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="AdminsId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="Admin_Car" Member="Admin" ThisKey="AdminsId" OtherKey="IdAdmins" Type="Admin" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+      <Association Name="CarBodyStyle_Car" Member="CarBodyStyle" ThisKey="CarBodyStylesId" OtherKey="IdCarBodyStyles" Type="CarBodyStyle" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+      <Association Name="CarBrandsandModel_Car" Member="CarBrandsandModel" ThisKey="CarBrandsandModelsId" OtherKey="IdCarBrandsandModels" Type="CarBrandsandModel" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+      <Association Name="CarColor_Car" Member="CarColor" ThisKey="CarColorsId" OtherKey="IdCarColors" Type="CarColor" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+      <Association Name="CarEnginePower_Car" Member="CarEnginePower" ThisKey="CarEnginePowersId" OtherKey="IdCarEnginePowers" Type="CarEnginePower" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+      <Association Name="CarEngine_Car" Member="CarEngine" ThisKey="CarEnginesId" OtherKey="IdCarEngines" Type="CarEngine" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+      <Association Name="CarFueltype_Car" Member="CarFueltype" ThisKey="CarFueltypesId" OtherKey="IdCarFueltypes" Type="CarFueltype" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+      <Association Name="CarGearbox_Car" Member="CarGearbox" ThisKey="CarGearboxesId" OtherKey="IdCarGearboxes" Type="CarGearbox" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+      <Association Name="CarKilometre_Car" Member="CarKilometre" ThisKey="CarKilometresId" OtherKey="IdCarKilometres" Type="CarKilometre" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+      <Association Name="CarPrice_Car" Member="CarPrice" ThisKey="CarPricesId" OtherKey="IdCarPrices" Type="CarPrice" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+      <Association Name="CarQuantity_Car" Member="CarQuantity" ThisKey="CarQuantitiesId" OtherKey="IdCarQuantities" Type="CarQuantity" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+      <Association Name="CarTransmission_Car" Member="CarTransmission" ThisKey="CarTransmissionsId" OtherKey="IdCarTransmissions" Type="CarTransmission" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+      <Association Name="ManufactureYear_Car" Member="ManufactureYear" ThisKey="ManufactureYearsId" OtherKey="IdManufactureYears" Type="ManufactureYear" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+      <Association Name="NewCar_Car" Member="NewCar" ThisKey="NewCarsId" OtherKey="IdNewCars" Type="NewCar" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CarTransmissions" Member="CarTransmissions">
+    <Type Name="CarTransmission">
+      <Column Name="IdCarTransmissions" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="[Name of Car Transmissions]" Member="Name_of_Car_Transmissions" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Association Name="CarTransmission_Car" Member="Cars" ThisKey="IdCarTransmissions" OtherKey="CarTransmissionsId" Type="Car" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Customers" Member="Customers">
+    <Type Name="Customer">
+      <Column Name="IdCustomers" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="[Name of Customers]" Member="Name_of_Customers" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="[Passwords of Customers]" Member="Passwords_of_Customers" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ManufactureYears" Member="ManufactureYears">
+    <Type Name="ManufactureYear">
+      <Column Name="IdManufactureYears" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="[Manufacture Years]" Member="Manufacture_Years" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Association Name="ManufactureYear_Car" Member="Cars" ThisKey="IdManufactureYears" OtherKey="ManufactureYearsId" Type="Car" />
+    </Type>
+  </Table>
+  <Table Name="dbo.NewCars" Member="NewCars">
+    <Type Name="NewCar">
+      <Column Name="IdNewCars" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="[New Car]" Member="New_Car" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="NewCar_Car" Member="Cars" ThisKey="IdNewCars" OtherKey="NewCarsId" Type="Car" />
+    </Type>
+  </Table>
+</Database>

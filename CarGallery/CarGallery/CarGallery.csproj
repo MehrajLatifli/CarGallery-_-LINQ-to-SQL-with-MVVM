@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6B150F76-A7D1-422D-B59B-13DA5E7E4EC9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>CarGallery</RootNamespace>
+    <AssemblyName>CarGallery</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationFramework.Aero2" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="Commands\RelayCommand.cs" />
+    <Compile Include="Models\Abstraction\IAdminRepository.cs" />
+    <Compile Include="Models\Abstraction\ICarBodyStylesRepository.cs" />
+    <Compile Include="Models\Abstraction\ICarColorsRepository.cs" />
+    <Compile Include="Models\Abstraction\ICarEnginePowersRepository.cs" />
+    <Compile Include="Models\Abstraction\ICarEnginesRepository.cs" />
+    <Compile Include="Models\Abstraction\ICarFueltypesRepository.cs" />
+    <Compile Include="Models\Abstraction\ICarGearBoxesRepository.cs" />
+    <Compile Include="Models\Abstraction\ICarKilometresRepository.cs" />
+    <Compile Include="Models\Abstraction\ICarBrandsandModelsRepository.cs" />
+    <Compile Include="Models\Abstraction\ICarPricesRepository.cs" />
+    <Compile Include="Models\Abstraction\ICarQuantitesRepository.cs" />
+    <Compile Include="Models\Abstraction\ICarTransmitionsRepository.cs" />
+    <Compile Include="Models\Abstraction\ICustomerRepository.cs" />
+    <Compile Include="Models\Abstraction\IManufactureYearsRepository.cs" />
+    <Compile Include="Models\Abstraction\INewCarsRepository.cs" />
+    <Compile Include="Models\Additional Classes\ComboBoxSelect.cs" />
+    <Compile Include="Models\Data Access\SQL Server\AdminRepository.cs" />
+    <Compile Include="Models\Data Access\SQL Server\CarBodyStyllesRepository.cs" />
+    <Compile Include="Models\Data Access\SQL Server\CarBrandsandModelsRepository.cs" />
+    <Compile Include="Models\Data Access\SQL Server\CarColorsRepository.cs" />
+    <Compile Include="Models\Data Access\SQL Server\CarEnginePowersRepository.cs" />
+    <Compile Include="Models\Data Access\SQL Server\CarEnginesRepository.cs" />
+    <Compile Include="Models\Data Access\SQL Server\CarFueltTypesRepository.cs" />
+    <Compile Include="Models\Data Access\SQL Server\CarGalleryDataClasses.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CarGalleryDataClasses.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Data Access\SQL Server\CarGearBoxesRepositorycs.cs" />
+    <Compile Include="Models\Data Access\SQL Server\CarKilometresRepositorycs.cs" />
+    <Compile Include="Models\Data Access\SQL Server\CarPrisesRepositorycs.cs" />
+    <Compile Include="Models\Data Access\SQL Server\CarQuantitiesRepository.cs" />
+    <Compile Include="Models\Data Access\SQL Server\CarTransmitionsRepositorycs.cs" />
+    <Compile Include="Models\Data Access\SQL Server\CustomerRepository.cs" />
+    <Compile Include="Models\Data Access\SQL Server\ManufactureYearsRepository.cs" />
+    <Compile Include="Models\Data Access\SQL Server\NewCarsRepository.cs" />
+    <Compile Include="Models\Position.cs" />
+    <Compile Include="View Models\AdminViewModel_UC.cs" />
+    <Compile Include="View Models\BaseViewModel.cs" />
+    <Compile Include="View Models\CustomerViewModel_UC.cs" />
+    <Compile Include="View Models\StartViewModel.cs" />
+    <Compile Include="Views\Start.xaml.cs">
+      <DependentUpon>Start.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\User control\AdminView_UC.xaml.cs">
+      <DependentUpon>AdminView_UC.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\User control\CustomerView_UC.xaml.cs">
+      <DependentUpon>CustomerView_UC.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Dictionaries\ButtonDictionary.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Dictionaries\ComboboxDictionary.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Dictionaries\TextDictionary.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="Views\Start.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\User control\AdminView_UC.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\User control\CustomerView_UC.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Models\Abstraction\ICarRepository.cs" />
+    <Compile Include="Models\Abstraction\IRepository.cs" />
+    <Compile Include="Models\Additional Classes\CloneHelper.cs" />
+    <Compile Include="Models\Additional Classes\ObservableCollectionHelper.cs" />
+    <Compile Include="Models\Data Access\SQL Server\CarRepository.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Resource Include="Fonts\Arial Bold.ttf" />
+    <Resource Include="Fonts\Bodoni MT Bold.ttf" />
+    <Resource Include="Fonts\Cooper Black.ttf" />
+    <Resource Include="Fonts\Geotype.TTF" />
+    <Resource Include="Fonts\Symbols1-M2YY.ttf" />
+    <None Include="Models\Data Access\SQL Server\CarGalleryDataClasses.dbml.layout">
+      <DependentUpon>CarGalleryDataClasses.dbml</DependentUpon>
+    </None>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Models\Data Access\SQL Server\CarGalleryDataClasses.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>CarGalleryDataClasses.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.Abstractions">
+      <Version>2.2.0</Version>
+    </PackageReference>
+    <PackageReference Include="System.Drawing.Common">
+      <Version>5.0.2</Version>
+    </PackageReference>
+    <PackageReference Include="System.Windows.Interactivity.WPF">
+      <Version>2.0.20525</Version>
+    </PackageReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

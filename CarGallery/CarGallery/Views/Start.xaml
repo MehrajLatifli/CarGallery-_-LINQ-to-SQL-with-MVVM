@@ -1,0 +1,81 @@
+﻿<Window x:Class="CarGallery.Views.Start"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CarGallery.Views"
+        mc:Ignorable="d"
+        xmlns:Themes="clr-namespace:Microsoft.Windows.Themes;assembly=PresentationFramework.Aero2" 
+
+        xmlns:views="clr-namespace:CarGallery.Views.User_control"
+        xmlns:vm="clr-namespace:CarGallery.View_Models" 
+        
+        xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity" d:DataContext="{d:DesignInstance Type=vm:StartViewModel}"
+        Title=" Car Gallery " MinHeight="900" MinWidth="1000" MaxHeight="1000" MaxWidth="1600"  WindowStyle="ToolWindow" WindowStartupLocation="CenterScreen" >
+
+
+
+
+    <Window.Resources>
+        <DataTemplate DataType="{x:Type vm:AdminViewModel_UC}">
+            <views:AdminView_UC/>
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type vm:CustomerViewModel_UC}">
+            <views:CustomerView_UC/>
+        </DataTemplate>
+    </Window.Resources>
+
+    <DockPanel Background="Bisque">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="3*"/>
+            </Grid.RowDefinitions>
+
+            <Grid x:Name="SingInGrid" Grid.Row="0">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="2*"/>
+                        <ColumnDefinition Width="1*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid Grid.Column="0" x:Name="SingInTextGrid">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="1*"/>
+                            <RowDefinition Height="1*"/>
+                        </Grid.RowDefinitions>
+                        <TextBox x:Name="NameTxtBox" Grid.Row="0" Margin="5" Padding="15" MaxLength="20" MaxLines="20" Foreground="{StaticResource TextForeGroundColor}" BorderBrush="{StaticResource TextBorderColor}"  FontSize="{StaticResource TextFontSize}" Style="{StaticResource ArialBold}" />
+                        <PasswordBox x:Name="PasswordTxtBox" Grid.Row="1" Margin="5" Padding="15" MaxLength="20"  Foreground="{StaticResource TextForeGroundColor}" BorderBrush="{StaticResource TextBorderColor}"  FontSize="{StaticResource TextFontSize}" Style="{StaticResource ArialBold}" />
+                    </Grid>
+                    <Grid Grid.Column="1" x:Name="SingInControlGrid">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="1*"/>
+                            <RowDefinition Height="1*"/>
+                        </Grid.RowDefinitions>
+                        <ComboBox x:Name="PositionCombobox" Grid.Row="0" Margin="5" Padding="20,10,20,10" Foreground="{StaticResource TextForeGroundColor}" BorderBrush="{StaticResource TextBorderColor}"  FontSize="{StaticResource TextFontSize}" ItemsSource="{Binding Positions, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" DisplayMemberPath="PositionName" SelectedItem="{Binding Path=Position}" Style="{DynamicResource ComboBoxStyle1}">
+                            
+                            <i:Interaction.Triggers>
+                                <i:EventTrigger EventName="SelectionChanged">
+                                    <i:InvokeCommandAction Command="{Binding SelectPositonCommand}" />
+                                </i:EventTrigger>
+                            </i:Interaction.Triggers>
+                            
+
+                        </ComboBox>
+                        <Button x:Name="SingInButtonasAdmin" Grid.Row="1" Content="SingIn as Admin" Margin="5" FontSize="20" Style="{StaticResource Button}"  Command="{Binding GotoAdmin_Command}" Visibility="Collapsed"/>
+                        <Button x:Name="SingInButtonasCustomer" Grid.Row="1" Content="SingIn as Customer" Margin="5" FontSize="20" Style="{StaticResource Button}"  Command="{Binding GotoCustomer_Command}" Visibility="Collapsed"/>
+
+
+                    </Grid>
+                </Grid>
+            </Grid>
+            <Grid x:Name="ContentcontrolGrid" Grid.Row="1">
+
+                <DockPanel>
+                    <ContentControl x:Name="PositionContentControl" Content="{Binding SelectedPositionViewModel_UC}" />
+                </DockPanel>
+            </Grid>
+        </Grid>
+    </DockPanel>
+</Window>
+
+

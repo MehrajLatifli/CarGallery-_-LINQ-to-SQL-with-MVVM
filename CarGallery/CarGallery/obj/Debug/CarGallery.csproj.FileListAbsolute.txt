@@ -1,0 +1,40 @@
+G:\Step\Ev tapşırıqları\3 -cü yarım il\ADO.NET\Ev tapşırıqları\Hazırlanan ev tapşırıqları\3 and 4\CarGallery\CarGallery\CarGallery\bin\Debug\CarGallery.exe.config
+G:\Step\Ev tapşırıqları\3 -cü yarım il\ADO.NET\Ev tapşırıqları\Hazırlanan ev tapşırıqları\3 and 4\CarGallery\CarGallery\CarGallery\bin\Debug\CarGallery.exe
+G:\Step\Ev tapşırıqları\3 -cü yarım il\ADO.NET\Ev tapşırıqları\Hazırlanan ev tapşırıqları\3 and 4\CarGallery\CarGallery\CarGallery\bin\Debug\CarGallery.pdb
+G:\Step\Ev tapşırıqları\3 -cü yarım il\ADO.NET\Ev tapşırıqları\Hazırlanan ev tapşırıqları\3 and 4\CarGallery\CarGallery\CarGallery\bin\Debug\Microsoft.AspNetCore.Authentication.Abstractions.dll
+G:\Step\Ev tapşırıqları\3 -cü yarım il\ADO.NET\Ev tapşırıqları\Hazırlanan ev tapşırıqları\3 and 4\CarGallery\CarGallery\CarGallery\bin\Debug\Microsoft.AspNetCore.Http.Abstractions.dll
+G:\Step\Ev tapşırıqları\3 -cü yarım il\ADO.NET\Ev tapşırıqları\Hazırlanan ev tapşırıqları\3 and 4\CarGallery\CarGallery\CarGallery\bin\Debug\Microsoft.AspNetCore.Http.Features.dll
+G:\Step\Ev tapşırıqları\3 -cü yarım il\ADO.NET\Ev tapşırıqları\Hazırlanan ev tapşırıqları\3 and 4\CarGallery\CarGallery\CarGallery\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+G:\Step\Ev tapşırıqları\3 -cü yarım il\ADO.NET\Ev tapşırıqları\Hazırlanan ev tapşırıqları\3 and 4\CarGallery\CarGallery\CarGallery\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+G:\Step\Ev tapşırıqları\3 -cü yarım il\ADO.NET\Ev tapşırıqları\Hazırlanan ev tapşırıqları\3 and 4\CarGallery\CarGallery\CarGallery\bin\Debug\Microsoft.Extensions.Options.dll
+G:\Step\Ev tapşırıqları\3 -cü yarım il\ADO.NET\Ev tapşırıqları\Hazırlanan ev tapşırıqları\3 and 4\CarGallery\CarGallery\CarGallery\bin\Debug\Microsoft.Extensions.Primitives.dll
+G:\Step\Ev tapşırıqları\3 -cü yarım il\ADO.NET\Ev tapşırıqları\Hazırlanan ev tapşırıqları\3 and 4\CarGallery\CarGallery\CarGallery\bin\Debug\System.Buffers.dll
+G:\Step\Ev tapşırıqları\3 -cü yarım il\ADO.NET\Ev tapşırıqları\Hazırlanan ev tapşırıqları\3 and 4\CarGallery\CarGallery\CarGallery\bin\Debug\System.ComponentModel.Annotations.dll
+G:\Step\Ev tapşırıqları\3 -cü yarım il\ADO.NET\Ev tapşırıqları\Hazırlanan ev tapşırıqları\3 and 4\CarGallery\CarGallery\CarGallery\bin\Debug\System.Drawing.Common.dll
+G:\Step\Ev tapşırıqları\3 -cü yarım il\ADO.NET\Ev tapşırıqları\Hazırlanan ev tapşırıqları\3 and 4\CarGallery\CarGallery\CarGallery\bin\Debug\System.Memory.dll
+G:\Step\Ev tapşırıqları\3 -cü yarım il\ADO.NET\Ev tapşırıqları\Hazırlanan ev tapşırıqları\3 and 4\CarGallery\CarGallery\CarGallery\bin\Debug\System.Numerics.Vectors.dll
+G:\Step\Ev tapşırıqları\3 -cü yarım il\ADO.NET\Ev tapşırıqları\Hazırlanan ev tapşırıqları\3 and 4\CarGallery\CarGallery\CarGallery\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+G:\Step\Ev tapşırıqları\3 -cü yarım il\ADO.NET\Ev tapşırıqları\Hazırlanan ev tapşırıqları\3 and 4\CarGallery\CarGallery\CarGallery\bin\Debug\System.Text.Encodings.Web.dll
+G:\Step\Ev tapşırıqları\3 -cü yarım il\ADO.NET\Ev tapşırıqları\Hazırlanan ev tapşırıqları\3 and 4\CarGallery\CarGallery\CarGallery\bin\Debug\Microsoft.Expression.Interactions.dll
+G:\Step\Ev tapşırıqları\3 -cü yarım il\ADO.NET\Ev tapşırıqları\Hazırlanan ev tapşırıqları\3 and 4\CarGallery\CarGallery\CarGallery\bin\Debug\System.Windows.Interactivity.dll
+G:\Step\Ev tapşırıqları\3 -cü yarım il\ADO.NET\Ev tapşırıqları\Hazırlanan ev tapşırıqları\3 and 4\CarGallery\CarGallery\CarGallery\obj\Debug\Dictionaries\ButtonDictionary.baml
+G:\Step\Ev tapşırıqları\3 -cü yarım il\ADO.NET\Ev tapşırıqları\Hazırlanan ev tapşırıqları\3 and 4\CarGallery\CarGallery\CarGallery\obj\Debug\Dictionaries\ComboboxDictionary.baml
+G:\Step\Ev tapşırıqları\3 -cü yarım il\ADO.NET\Ev tapşırıqları\Hazırlanan ev tapşırıqları\3 and 4\CarGallery\CarGallery\CarGallery\obj\Debug\Dictionaries\TextDictionary.baml
+G:\Step\Ev tapşırıqları\3 -cü yarım il\ADO.NET\Ev tapşırıqları\Hazırlanan ev tapşırıqları\3 and 4\CarGallery\CarGallery\CarGallery\obj\Debug\Views\Start.g.cs
+G:\Step\Ev tapşırıqları\3 -cü yarım il\ADO.NET\Ev tapşırıqları\Hazırlanan ev tapşırıqları\3 and 4\CarGallery\CarGallery\CarGallery\obj\Debug\Views\User control\AdminView_UC.g.cs
+G:\Step\Ev tapşırıqları\3 -cü yarım il\ADO.NET\Ev tapşırıqları\Hazırlanan ev tapşırıqları\3 and 4\CarGallery\CarGallery\CarGallery\obj\Debug\Views\User control\CustomerView_UC.g.cs
+G:\Step\Ev tapşırıqları\3 -cü yarım il\ADO.NET\Ev tapşırıqları\Hazırlanan ev tapşırıqları\3 and 4\CarGallery\CarGallery\CarGallery\obj\Debug\App.g.cs
+G:\Step\Ev tapşırıqları\3 -cü yarım il\ADO.NET\Ev tapşırıqları\Hazırlanan ev tapşırıqları\3 and 4\CarGallery\CarGallery\CarGallery\obj\Debug\GeneratedInternalTypeHelper.g.cs
+G:\Step\Ev tapşırıqları\3 -cü yarım il\ADO.NET\Ev tapşırıqları\Hazırlanan ev tapşırıqları\3 and 4\CarGallery\CarGallery\CarGallery\obj\Debug\CarGallery_MarkupCompile.cache
+G:\Step\Ev tapşırıqları\3 -cü yarım il\ADO.NET\Ev tapşırıqları\Hazırlanan ev tapşırıqları\3 and 4\CarGallery\CarGallery\CarGallery\obj\Debug\CarGallery_MarkupCompile.lref
+G:\Step\Ev tapşırıqları\3 -cü yarım il\ADO.NET\Ev tapşırıqları\Hazırlanan ev tapşırıqları\3 and 4\CarGallery\CarGallery\CarGallery\obj\Debug\App.baml
+G:\Step\Ev tapşırıqları\3 -cü yarım il\ADO.NET\Ev tapşırıqları\Hazırlanan ev tapşırıqları\3 and 4\CarGallery\CarGallery\CarGallery\obj\Debug\Views\Start.baml
+G:\Step\Ev tapşırıqları\3 -cü yarım il\ADO.NET\Ev tapşırıqları\Hazırlanan ev tapşırıqları\3 and 4\CarGallery\CarGallery\CarGallery\obj\Debug\Views\User control\AdminView_UC.baml
+G:\Step\Ev tapşırıqları\3 -cü yarım il\ADO.NET\Ev tapşırıqları\Hazırlanan ev tapşırıqları\3 and 4\CarGallery\CarGallery\CarGallery\obj\Debug\Views\User control\CustomerView_UC.baml
+G:\Step\Ev tapşırıqları\3 -cü yarım il\ADO.NET\Ev tapşırıqları\Hazırlanan ev tapşırıqları\3 and 4\CarGallery\CarGallery\CarGallery\obj\Debug\CarGallery.g.resources
+G:\Step\Ev tapşırıqları\3 -cü yarım il\ADO.NET\Ev tapşırıqları\Hazırlanan ev tapşırıqları\3 and 4\CarGallery\CarGallery\CarGallery\obj\Debug\CarGallery.Properties.Resources.resources
+G:\Step\Ev tapşırıqları\3 -cü yarım il\ADO.NET\Ev tapşırıqları\Hazırlanan ev tapşırıqları\3 and 4\CarGallery\CarGallery\CarGallery\obj\Debug\CarGallery.csproj.GenerateResource.cache
+G:\Step\Ev tapşırıqları\3 -cü yarım il\ADO.NET\Ev tapşırıqları\Hazırlanan ev tapşırıqları\3 and 4\CarGallery\CarGallery\CarGallery\obj\Debug\CarGallery.csproj.CoreCompileInputs.cache
+G:\Step\Ev tapşırıqları\3 -cü yarım il\ADO.NET\Ev tapşırıqları\Hazırlanan ev tapşırıqları\3 and 4\CarGallery\CarGallery\CarGallery\obj\Debug\CarGallery.exe
+G:\Step\Ev tapşırıqları\3 -cü yarım il\ADO.NET\Ev tapşırıqları\Hazırlanan ev tapşırıqları\3 and 4\CarGallery\CarGallery\CarGallery\obj\Debug\CarGallery.pdb
+G:\Step\Ev tapşırıqları\3 -cü yarım il\ADO.NET\Ev tapşırıqları\Hazırlanan ev tapşırıqları\3 and 4\CarGallery\CarGallery\CarGallery\obj\Debug\CarGallery.csproj.AssemblyReference.cache
